@@ -2,6 +2,7 @@ import CareTip from "../../../public/assets/01.png";
 import CareTip2 from "../../../public/assets/02.png";
 import CareTip3 from "../../../public/assets/03.png";
 import CareTip4 from "../../../public/assets/04.png";
+import { NavLink } from "react-router-dom";
 
 const BlogPost = () => {
   return (
@@ -10,59 +11,70 @@ const BlogPost = () => {
       <p className="text-center text-[#727272] ">
         We are an online plant shop offering a wide range of cheap and trendy
         plants.
-        <div className="flex mt-8 gap-11">
+        <div className="flex gap-5 mt-[30px]">
           <div className="bg-[#FBFBFB] shadow-xl hover:bg-green-100 hover:transform hover:scale-105 transition-transform duration-300">
             <img src={CareTip} alt="img" className="w-full" />
             <div className="p-4">
-              <p className="text-green-500">September 12 I Read in 6 minutes</p>
-              <h1 className="text-xl font-medium">
+              <p className="text-green-500 text-start w-[230px] text-[15px] mb-[5px]">September 12 I Read in 6 minutes</p>
+              <h1 className="text-xl font-medium text-start w-[200px] text-black">
                 Cactus & Succulent Care Tips
               </h1>
-              <p className="text-[#727272]">
+              <p className="text-[#727272] text-start mt-[8px]">
                 Cacti are succulents are easy care plants for any home or patio.
               </p>
-              <button className=" font-bold pt-2">Find More →</button>
+              <NavLink to="/Shop">
+              <button className=" font-bold pt-2 w-[250px] mt-[20px] text-start text-black hover:text-green-500">Find More →</button>
+              </NavLink>
             </div>
           </div>
           <div className="bg-[#FBFBFB] shadow-xl hover:bg-green-100 hover:transform hover:scale-105 transition-transform duration-300">
-            <img src={CareTip2} alt="img" className="w-full" />
+            <img src={CareTip} alt="img" className="w-full" />
             <div className="p-4">
-              <p className="text-green-500">September 12 I Read in 6 minutes</p>
-              <h1 className="text-xl font-medium">
+              <p className="text-green-500 text-start w-[230px] text-[15px] mb-[5px]">September 12 I Read in 6 minutes</p>
+              <h1 className="text-xl font-medium text-start w-[200px] text-black">
                 Cactus & Succulent Care Tips
               </h1>
-              <p className="text-[#727272]">
+              <p className="text-[#727272] text-start mt-[8px]">
                 Cacti are succulents are easy care plants for any home or patio.
               </p>
-              <button className="font-bold pt-2">Find More →</button>
+              <NavLink to="/Shop">
+              <button className=" font-bold pt-2 w-[250px] mt-[20px] text-start text-black hover:text-green-500">Find More →</button>
+              </NavLink>
             </div>
           </div>
           <div className="bg-[#FBFBFB] shadow-xl hover:bg-green-100 hover:transform hover:scale-105 transition-transform duration-300">
-            <img src={CareTip3} alt="img" className="w-full" />
+            <img src={CareTip} alt="img" className="w-full" />
             <div className="p-4">
-              <p className="text-green-500">September 12 I Read in 6 minutes</p>
-              <h1 className="text-xl font-medium">
+              <p className="text-green-500 text-start w-[230px] text-[15px] mb-[5px]">September 12 I Read in 6 minutes</p>
+              <h1 className="text-xl font-medium text-start w-[200px] text-black">
                 Cactus & Succulent Care Tips
               </h1>
-              <p className="text-[#727272]">
+              <p className="text-[#727272] text-start mt-[8px]">
                 Cacti are succulents are easy care plants for any home or patio.
               </p>
-              <button className="font-bold pt-2">Find More →</button>
+              <NavLink to="/Shop">
+              <button className=" font-bold pt-2 w-[250px] mt-[20px] text-start text-black hover:text-green-500">Find More →</button>
+              </NavLink>
             </div>
           </div>
           <div className="bg-[#FBFBFB] shadow-xl hover:bg-green-100 hover:transform hover:scale-105 transition-transform duration-300">
-            <img src={CareTip4} alt="img" className="w-full" />
+            <img src={CareTip} alt="img" className="w-full" />
             <div className="p-4">
-              <p className="text-green-500">September 12 I Read in 6 minutes</p>
-              <h1 className="text-xl font-medium">
+              <p className="text-green-500 text-start w-[230px] text-[15px] mb-[5px]">September 12 I Read in 6 minutes</p>
+              <h1 className="text-xl font-medium text-start w-[200px] text-black">
                 Cactus & Succulent Care Tips
               </h1>
-              <p className="text-[#727272]">
+              <p className="text-[#727272] text-start mt-[8px]">
                 Cacti are succulents are easy care plants for any home or patio.
               </p>
-              <button className="font-bold pt-2">Find More →</button>
+              <NavLink to="/Shop">
+                <button className=" font-bold pt-2 w-[250px] mt-[20px] text-start text-black hover:text-green-500">
+                Find More →
+                </button>
+              </NavLink>
             </div>
           </div>
+          
         </div>
       </p>
     </div>

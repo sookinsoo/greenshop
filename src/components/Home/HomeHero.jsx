@@ -1,5 +1,6 @@
 import  { useEffect, useState } from "react";
 import Better from "../../../public/assets/better.png";
+import { NavLink } from "react-router-dom";
 
 const HomeHero = () => {
   const [translateX, setTranslateX] = useState(0);
@@ -46,9 +47,11 @@ const HomeHero = () => {
                   <br />
                   Order your favorite plants!
                 </p>
+                <NavLink to="/Shop">
                 <button className="px-7 py-2 bg-[#46A358] rounded-lg font-medium mt-4 text-white">
                   SHOP NOW
                 </button>
+                </NavLink>
               </div>
               <div className="flex items-end w-[40%]">
                 <img

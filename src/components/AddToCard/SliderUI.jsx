@@ -19,10 +19,10 @@ const SliderUI = () => {
   };
 
   return (
-    <div className="mt-28">
+    <div className="mt-[14  px]">
       <div className="w-full overflow-hidden">
         <div
-          className="mt-28 flex transition-transform duration-1000"
+          className="mt-8 flex transition-transform duration-1000"
           style={{ transform: `translateX(-${count * 100}%)` }}
         >
           {Data.slice(0, 15).map((item) => {

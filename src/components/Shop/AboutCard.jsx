@@ -1,16 +1,17 @@
 import { useContext, useEffect, useState } from "react";
-import { AboutContext } from "../../App";
+import { AboutContext, ProductContext } from "../../App";
 import { Data } from "../../data.js/data";
 import { FaStar } from "react-icons/fa";
 import { CiStar, CiHeart } from "react-icons/ci";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { LuMessageSquare } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import Modal from "../Navbar/Modal"; 
 
 const AboutCard = () => {
   const { about } = useContext(AboutContext);
-  const NotFound =
-    "https://answers-afd.microsoft.com/static/images/image-not-found.jpg";
+  const { product, setProduct } = useContext(ProductContext);
+  const NotFound = "";
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("S");
 
@@ -31,14 +32,18 @@ const AboutCard = () => {
     setSelectedSize(size);
   };
 
+  const addToCart = (item) => {
+    setProduct((prevProduct) => [...prevProduct, { ...item, quantity }]);
+  };
+
   return (
     <div className="mt-28 mb-11">
       {about && about.length > 0 ? (
         Data.map((item) => {
           if (item.id == about[0]) {
             return (
-              <div key={item.id} className="flex items-center gap-16">
-                <div className="w-[40%]">
+              <div key={item.id} className="flex items-center gap-10">
+                <div className="w-[25%]">
                   {Array(4)
                     .fill()
                     .map((_, index) => (
@@ -51,7 +56,11 @@ const AboutCard = () => {
                     ))}
                 </div>
                 <div className="w-[100%]">
-                  <img src={item.image_url} alt="img" className="w-96 h-96" />
+                  <img
+                    src={item.image_url}
+                    alt="img"
+                    className="w-[450px] h-[480px]"
+                  />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold">{item.common_name}</h1>
@@ -82,8 +91,8 @@ const AboutCard = () => {
                           onClick={() => handleSizeChange(size)}
                           className={`py-2 px-4 rounded-full cursor-pointer ${
                             selectedSize === size
-                              ? "bg-green-500 text-white border-green-500"
-                              : "bg-green-100 text-green-500 border-green-200"
+                              ? "bg-green-300  text-white-700 border-green-500"
+                              : "bg-green-00 text-green-500 border-green-700"
                           }`}
                         >
                           {size}
@@ -92,28 +101,31 @@ const AboutCard = () => {
                     </div>
                     <div className="flex items-center gap-4 my-3">
                       <button
-                        className="py-1 px-3 text-lg rounded-full bg-green-600 text-white"
+                        className="py-1 px-3 text-lg rounded-full bg-green-500 text-white"
                         onClick={handleDecrement}
                       >
                         -
                       </button>
                       <p>{quantity}</p>
                       <button
-                        className="py-1 px-3 rounded-full bg-green-600 text-white"
+                        className="flex items-center justify-center  py-1 px-3 rounded-full bg-green-500 text-white"
                         onClick={handleIncrement}
                       >
                         +
                       </button>
                       <Link to="/shop/card">
-                        <button className="px-5 py-2 bg-green-600 text-white rounded-lg">
+                        <button className="px-5 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
                           Buy now
                         </button>
                       </Link>
-                      <button className="px-5 py-2 border-green-500 rounded-lg border">
-                        Add to cart{" "}
+                      <button
+                        className="px-5 py-2 border-green-500 rounded-lg border"
+                        onClick={() => addToCart(item)}
+                      >
+                        Add to cart
                       </button>
-                      <p className="p-3 rounded-full border border-green-600">
-                        <CiHeart className="text-green-600" />
+                      <p className="p-3 rounded-full border border-green-600 hover:bg-green-500 hover:text-white-700">
+                        <CiHeart className="text-green-600 hover:text-white" />
                       </p>
                     </div>
                     <p>
@@ -131,10 +143,12 @@ const AboutCard = () => {
                       <p className="font-medium opacity-55">
                         Share this products:
                       </p>
-                      <FaFacebookF className="w-6" />
-                      <FaTwitter className="w-6" />
-                      <FaLinkedinIn className="w-6" />
-                      <LuMessageSquare className="w-6" />
+                    </div>
+                    <div className="flex mt-[20px] gap-2">
+                      <FaFacebookF className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
+                      <FaTwitter className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
+                      <FaLinkedinIn className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
+                      <LuMessageSquare className="w-6 cursor-pointer hover:scale-110 hover:text-blue-700" />
                     </div>
                   </div>
                 </div>
@@ -145,7 +159,6 @@ const AboutCard = () => {
         })
       ) : (
         <div className="flex flex-col items-center justify-center">
-          <img src={NotFound} alt="" className="w-96 h-60" />
           <p className="text-gray-500">No found image </p>
         </div>
       )}

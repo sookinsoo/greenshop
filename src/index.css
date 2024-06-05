@@ -9,3 +9,7 @@
     transition: all ease 500ms;
     
 }
+
+body{
+    cursor: pointer;
+}

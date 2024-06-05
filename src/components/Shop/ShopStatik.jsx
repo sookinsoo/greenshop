@@ -143,7 +143,7 @@ const ShopStatik = () => {
                 onClick={() => setAbout([item.id])}
               >
                 <div>
-                  <img src={item.image_url} alt="img" className="w-full h-60" />
+                  <img src={item.image_url} alt="img" className="w-60 h-70" />
                   <p className="text-[#3D3D3D]">{item.common_name}</p>
                   <p className="text-green-500 font-bold">${item.price}.00</p>
                 </div>

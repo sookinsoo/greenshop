@@ -4,10 +4,12 @@ import Home from "./Pages/Home";
 import Nav from "./components/Navbar/Nav";
 import Shop from "./Pages/Shop";
 import ShoppingCard from "./Pages/ShoppingCard";
-import Checkout from "./Pages/Checkout";
 import Footer from "./components/Footer/Footer";
 import Care from "./Pages/Care";
 import Blogs from "./Pages/Blogs";
+import Checkout from "./Pages/Checkout";
+import Modal from "./Pages/Modal";
+import AboutCard from "./components/Shop/AboutCard";
 
 export const AboutContext = createContext();
 export const ProductContext = createContext();
@@ -28,7 +30,8 @@ const App = () => {
               <Route path="/care" element={<Care />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/shop/card" element={<ShoppingCard />} />
-              <Route path="/shop/checkout" element={<Checkout />} />
+              <Route path="/Checkout" element={<Checkout />} />
+              <Route path="/blogs" element={<Modal />} />
             </Routes>
             <Footer />
           </Router>
