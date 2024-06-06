@@ -19,16 +19,16 @@ const Footer = () => {
     <div className="mt-24">
       <div className="flex gap-4 bg-[#FBFBFB] p-7 border-r-2 cursor-pointer">
         <div className="p-7 flex items-center border-r-2">
-          <img src={Group1} alt="img" className="w-40 h-52 object-contain" />
+          <img src={Group1} alt="img" className="w-40 h-52 object-contain hover:scale-110" />
         </div>
         <div className="p-7 flex items-center border-r-2">
-          <img src={Group2} alt="img" className="w-40 h-52 object-contain" />
+          <img src={Group2} alt="img" className="w-40 h-52 object-contain hover:scale-110" />
         </div>
         <div className="p-7 flex items-center">
-          <img src={Group3} alt="img" className="w-40 h-52 object-contain" />
+          <img src={Group3} alt="img" className="w-40 h-52 object-contain hover:scale-110" />
         </div>
         <div className="flex-1 p-7">
-          <h1 className="text-xl font-bold mb-4">
+          <h1 className="text-xl font-bold mb-4 ">
             Would you like to join newsletters?
           </h1>
           <div className="flex items-center mb-4">
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
       <div className="flex p-7 bg-[#46A3581A] gap-16 cursor-pointer">
         <img src={Logo} alt="img" />
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center hover:scale-110">
           <IoLocationOutline className="w-6 h-6 text-green-500" />
           <a
             href="https://www.google.com/maps/place/Rayhon+National+Meals+Restaurant/@41.2831386,69.2043005,15z/data=!4m6!3m5!1s0x38ae8a31ca66d417:0x5755ff29b7bf33a!8m2!3d41.2858377!4d69.2056945!16s%2Fg%2F11gd21npmv?entry=ttu"
@@ -61,7 +61,7 @@ const Footer = () => {
             </p>
           </a>
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center hover:scale-110">
           <TiContacts className="w-6 h-6 text-green-500" />
           <p>
             <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
@@ -69,7 +69,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center hover:scale-110">
           <FaPhoneVolume className="w-5 h-5 text-green-500" />
           <p>+88 01911 717 490</p>
         </div>
@@ -81,35 +81,35 @@ const Footer = () => {
             <li className="text-xl font-semibold mb-3 text-black">
               My Account
             </li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">My Account</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Specials</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">My Account</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Specials</li>
           </ul>
         </div>
         <div className="p-7">
           <ul>
             <li className="text-xl font-semibold mb-3 text-black">
-              My Account
+              My Email
             </li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">My Account</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Specials</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">My Account</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Specials</li>
           </ul>
         </div>
         <div className="p-7">
           <ul>
             <li className="text-xl font-semibold mb-3 text-black">
-              My Account
+              My Address
             </li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">My Account</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact us</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Contact</li>
-            <li className="text-[#3D3D3D] opacity-80 mb-1">Specials</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">My Account</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact us</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Contact</li>
+            <li className="text-[#3D3D3D] opacity-80 mb-1 hover:text-green-500">Specials</li>
           </ul>
         </div>
         <div className="p-7 cursor-pointer">
@@ -118,27 +118,27 @@ const Footer = () => {
               Social Media
             </li>
             <div className="flex gap-2">
-              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-[#46A35833] transition-colors duration-300">
+              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-green-300 transition-colors duration-300">
                 <a href="https://www.facebook.com/" target="blank">
                   <FaFacebookF className="text-[#46A35899] hover:text-green-700 transition-colors duration-300" />
                 </a>
               </p>
-              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-[#46A35833] transition-colors duration-300">
+              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-green-300 transition-colors duration-300">
                 <a href="https://www.instagram.com/">
                   <FaInstagram className="text-[#46A35899] hover:text-green-700 transition-colors duration-300" />
                 </a>
               </p>
-              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-[#46A35833] transition-colors duration-300">
+              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-green-300 transition-colors duration-300">
                 <a href="https://x.com/">
                   <FaTwitter className="text-[#46A35899] hover:text-green-700 transition-colors duration-300" />
                 </a>
               </p>
-              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-[#46A35833] transition-colors duration-300">
+              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-green-300 transition-colors duration-300">
                 <a href="https://www.linkedin.com/">
                   <FaLinkedinIn className="text-[#46A35899] hover:text-green-700 transition-colors duration-300" />
                 </a>
               </p>
-              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-[#46A35833] transition-colors duration-300">
+              <p className="border p-2 rounded-md border-[#46A35833] hover:bg-green-300 transition-colors duration-300">
                 <a href="https://www.youtube.com/">
                   <FaYoutube className="text-[#46A35899] hover:text-green-700 transition-colors duration-300" />
                 </a>

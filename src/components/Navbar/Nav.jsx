@@ -60,7 +60,12 @@ const Nav = () => {
         </SignInButton>
       </SignedOut>
       <SignedIn>
+        <NavLink to="/Login">
+        <div className="text-white gap-1 bg-[#1aad51] flex items-center py-1 px-5 rounded-lg hover:bg-green-700">
+        <p className="text-white gap-1 mr-[5px] text-[14px] font-medium">User</p>
         <UserButton />
+        </div>
+        </NavLink>
       </SignedIn>
         </div>
       </nav>

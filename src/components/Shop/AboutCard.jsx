@@ -159,6 +159,7 @@ const AboutCard = () => {
         })
       ) : (
         <div className="flex flex-col items-center justify-center">
+          <img className="w-[300px] h-[200px]" src="https://cdni.iconscout.com/illustration/premium/thumb/search-not-found-6275834-5210416.png" alt="" />
           <p className="text-gray-500">No found image </p>
         </div>
       )}

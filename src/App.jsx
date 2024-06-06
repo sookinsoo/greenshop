@@ -10,6 +10,7 @@ import Blogs from "./Pages/Blogs";
 import Checkout from "./Pages/Checkout";
 import Modal from "./Pages/Modal";
 import AboutCard from "./components/Shop/AboutCard";
+import Login from "./Pages/Login";
 
 export const AboutContext = createContext();
 export const ProductContext = createContext();
@@ -32,6 +33,7 @@ const App = () => {
               <Route path="/shop/card" element={<ShoppingCard />} />
               <Route path="/Checkout" element={<Checkout />} />
               <Route path="/blogs" element={<Modal />} />
+              <Route path="/Login" element={<Login />} />
             </Routes>
             <Footer />
           </Router>
